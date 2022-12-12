@@ -1,0 +1,24 @@
+{
+  "name": "doggo",
+  "version": "1.0.0",
+  "description": "Stray dog charity website created using bootstrap",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run lite",
+    "lite": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mats000111/doggo.git"
+  },
+  "author": "Mats R",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mats000111/doggo/issues"
+  },
+  "homepage": "https://github.com/mats000111/doggo#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
