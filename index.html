@@ -5,16 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/styles.css">
 
     <title>Doggo: Woof Woof Waf</title>
+
+    <style>
+        .container {
+            border: solid red;
+        }
+
+        .row {
+            border: solid blue;
+            margin: 1px;
+        }
+
+        .col {
+            border: solid black;
+            margin: 1px;
+        }
+    </style>
+
 </head>
 <body>
     <!--header, logo and donate button will go here-->
-    <h1>Doggo</h1>
-    <h2>Love for the strays</h2>
+    <header class="jumbotron jumbotron-fluid">
+        <div class="container-fluid">
+            <div class="row header-row">
+                <div class="col doggo-logo">
+                    <img src="img/doggo_logo.jpg" class="img-fluid" alt="doggo logo">
+                </div>
+                <div class="col">
+                    <h1>Doggo</h1>
+                    <h2>Love for the strays</h2>
+                </div>
+                <div class="col align-self-center text-right">
+                    <button type="button" class="btn btn-warning btn-lg">Donate</button>
+                </div>
+        </div>
+    </header>
     <!--end-->
 
     <!--sticky navbar will go here-->
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="img/doggo_logo.jpg" width="30px" height="30px" alt="doggo logo" loading="lazy">
+        </a>
+    </nav>
     <!--end-->
 
     <!--call for help will go here-->
@@ -43,7 +79,7 @@
 
     <!---->
     <!--end-->
-    
+
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
