@@ -6,3 +6,11 @@
 .header-row {
     padding: 0 50px;
 }
+
+footer {
+    text-align: center;
+}
+
+.footer-paragraph {
+    margin-bottom: 0;
+}
