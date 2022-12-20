@@ -29,6 +29,104 @@
     </header>
     <!--end-->
 
+    <!--modals-->
+    <div class="modal fade" tabindex="-1" id="elliotModal" aria-labelledby="elliotModalLabel" aria-hidden="true"> 
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="elliotModalLabel">Elliot</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>Legend says this dogs father was a real wolf. Does the mean he is half-wolf half-dog, or half-dog half-wolf?</p>
+              <img src="img/elliot.jpeg" alt="picture of dog">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" tabindex="-1" id="lolaModal" aria-labelledby="lolaModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="lolaModalLabel">Lola</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>Your friendly neighbourhood dog. Found when he was just a puppy.</p>
+              <img src="img/lola.jpeg" alt="picture of dog">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-warning btn-lg">Donate</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" tabindex="-1" id="pepperModal" aria-labelledby="pepperModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="pepperModalLabel">Pepper</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>Called pepper due to the spicy character of the dog. Lively and full of energy.</p>
+              <img src="img/pepper.jpeg" alt="picture of dog">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-warning btn-lg">Donate</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" tabindex="-1" id="sammyModal" aria-labelledby="sammyModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="sammyModalLabel">Sammy</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>When barking he sounds nothing like a Sammy. No one knows the true mystery behinds the name.</p>
+              <img src="img/sammy.jpeg" alt="picture of dog">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-warning btn-lg">Donate</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" tabindex="-1" id="donateModal" aria-labelledby="donateModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="donateModalLabel">Call for help!</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>Your donation will help provide food, care and shelter for our lovely puppys and doggos</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-warning btn-lg">Donate</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--end-->
+
     <!--sticky navbar will go here-->
     <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="index.html">
@@ -49,14 +147,41 @@
     <!--end-->
 
     <!--welcome message and explaining the page utilities-->
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h3>Welcome to our doggos virtual home.</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h5>Click on the pictures to get more information about the dogs.</h5>
+            </div>
+        </div>
     <!--end-->
 
-    <!--several pictures with name (with tooltip thay says "click me") of dogs that open up a modal when clicked on, modal includes name,  description, picture and donate button-->
+    <!--several pictures with name (with tooltip that says "click me") of dogs that open up a modal when clicked on, modal includes name,  description, picture and donate button-->
+        <div class="row">
+            <div class="col">
+                <img src="img/elliot.jpeg" alt="picture of dog" data="modal" data-target="elliotModal">
+            </div>
+            <div class="col">
+                <img src="img/lola.jpeg" alt="picture of dog">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="img/pepper.jpeg" alt="picture of dog">
+            </div>
+            <div class="col">
+                <img src="img/sammy.jpeg" alt="picture of dog">
+            </div>
+        </div>
     <!--end-->
 
     <!---->
     <!--end-->
-
+    </div>
     <!---->
     <footer class="site-footer">
         <div class="container">
@@ -72,6 +197,11 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        $('#myModal').on('shown.bs.modal', function () {
+            $('#myInput').trigger('focus')
+        })
+    </script>
     
 </body>
 </html>
