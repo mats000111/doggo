@@ -8,6 +8,22 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
 
+    <style>
+      .container {
+          border: solid red;
+      }
+
+      .row {
+          border: solid blue;
+          margin: 1px;
+      }
+
+      .col {
+          border: solid black;
+          margin: 1px;
+      }
+    </style>
+
     <title>Doggo: Woof Woof Waf</title>
 </head>
 <body>
@@ -23,8 +39,9 @@
                     <h2>Love for the strays</h2>
                 </div>
                 <div class="col align-self-center text-right">
-                    <button type="button" class="btn btn-warning btn-lg">Donate</button>
+                    <button type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#donateModal">Donate</button>
                 </div>
+            </div>
         </div>
     </header>
     <!--end-->
@@ -44,8 +61,7 @@
               <img src="img/elliot.jpeg" alt="picture of dog">
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
+              <button type="button" class="btn btn-warning btn-lg">Donate</button>
             </div>
           </div>
         </div>
@@ -120,7 +136,9 @@
               <p>Your donation will help provide food, care and shelter for our lovely puppys and doggos</p>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-warning btn-lg">Donate</button>
+              <a href="donate.html">
+                <button type="button" class="btn btn-warning btn-lg">To the donation page!</button>
+              </a>
             </div>
           </div>
         </div>
@@ -163,18 +181,26 @@
     <!--several pictures with name (with tooltip that says "click me") of dogs that open up a modal when clicked on, modal includes name,  description, picture and donate button-->
         <div class="row">
             <div class="col">
-                <img src="img/elliot.jpeg" alt="picture of dog" data="modal" data-target="elliotModal">
+                <a href="#elliotModal" data="modal" role="button" data-toggle="modal">
+                  <img src="img/elliot.jpeg" alt="picture of dog">
+                </a>
             </div>
             <div class="col">
+              <a href="#lolaModal" data="modal" role="button" data-toggle="modal">
                 <img src="img/lola.jpeg" alt="picture of dog">
+              </a>
             </div>
         </div>
         <div class="row">
             <div class="col">
+              <a href="#pepperModal" data="modal" role="button" data-toggle="modal">
                 <img src="img/pepper.jpeg" alt="picture of dog">
+              </a>
             </div>
             <div class="col">
+              <a href="#sammyModal" data="modal" role="button" data-toggle="modal">
                 <img src="img/sammy.jpeg" alt="picture of dog">
+              </a>
             </div>
         </div>
     <!--end-->

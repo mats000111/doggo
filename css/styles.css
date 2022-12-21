@@ -14,3 +14,22 @@ footer {
 .footer-paragraph {
     margin-bottom: 0;
 }
+
+.jumbotron {
+    margin-bottom: 0;
+}
+
+.index-btn1, .profile-picture {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 0;
+}
+
+.row {
+    padding: 50px 0;
+    border-bottom: 1px ridge;
+}
+
+.carousel {
+}

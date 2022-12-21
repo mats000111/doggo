@@ -8,6 +8,22 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
 
+    <style>
+        .container {
+            border: solid red;
+        }
+
+        .row {
+            border: solid blue;
+            margin: 1px;
+        }
+
+        .col {
+            border: solid black;
+            margin: 1px;
+        }
+    </style>
+
     <title>Doggo: Woof Woof Waf</title>
 </head>
 <body>
@@ -23,10 +39,34 @@
                     <h2>Love for the strays</h2>
                 </div>
                 <div class="col align-self-center text-right">
-                    <button type="button" class="btn btn-warning btn-lg">Donate</button>
+                    <button type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#donateModal">Donate</button>
                 </div>
+            </div>
         </div>
     </header>
+    <!--end-->
+
+    <!--modal-->
+    <div class="modal fade" tabindex="-1" id="donateModal" aria-labelledby="donateModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="donateModalLabel">Call for help!</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>Your donation will help provide food, care and shelter for our lovely puppys and doggos</p>
+            </div>
+            <div class="modal-footer">
+              <a href="donate.html">
+                <button type="button" class="btn btn-warning btn-lg">To the donation page!</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     <!--end-->
 
     <!--sticky navbar will go here-->
@@ -82,6 +122,7 @@
                 <label class="col" for="message">Your message:</label>
                 <textarea class="form-control col" id="message" rows="5"></textarea>
             </div>
+            <button class="btn btn-primary">submit</button>
         </form>
     </div>
     <!--end-->
