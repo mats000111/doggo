@@ -8,21 +8,6 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
 
-    <style>
-      .container {
-          border: solid red;
-      }
-
-      .row {
-          border: solid blue;
-          margin: 1px;
-      }
-
-      .col {
-          border: solid black;
-          margin: 1px;
-      }
-    </style>
 
     <title>Doggo: Woof Woof Waf</title>
 </head>
@@ -167,12 +152,8 @@
     <!--welcome message and explaining the page utilities-->
     <div class="container">
         <div class="row">
-            <div class="col">
+            <div class="col text-center">
                 <h3>Welcome to our doggos virtual home.</h3>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
                 <h5>Click on the pictures to get more information about the dogs.</h5>
             </div>
         </div>
@@ -180,26 +161,26 @@
 
     <!--several pictures with name (with tooltip that says "click me") of dogs that open up a modal when clicked on, modal includes name,  description, picture and donate button-->
         <div class="row">
-            <div class="col">
+            <div class="col-sm-6  mb-3">
                 <a href="#elliotModal" data="modal" role="button" data-toggle="modal">
-                  <img src="img/elliot.jpeg" alt="picture of dog">
+                  <img src="img/elliot.jpeg" alt="picture of dog" class="img-fluid">
                 </a>
             </div>
-            <div class="col">
+            <div class="col-sm-6">
               <a href="#lolaModal" data="modal" role="button" data-toggle="modal">
-                <img src="img/lola.jpeg" alt="picture of dog">
+                <img src="img/lola.jpeg" alt="picture of dog" class="img-fluid">
               </a>
             </div>
         </div>
-        <div class="row">
-            <div class="col">
+        <div class="row" style="border-bottom: 0px none;">
+            <div class="col-sm-6 mb-3">
               <a href="#pepperModal" data="modal" role="button" data-toggle="modal">
-                <img src="img/pepper.jpeg" alt="picture of dog">
+                <img src="img/pepper.jpeg" alt="picture of dog" class="img-fluid">
               </a>
             </div>
-            <div class="col">
+            <div class="col-sm-6">
               <a href="#sammyModal" data="modal" role="button" data-toggle="modal">
-                <img src="img/sammy.jpeg" alt="picture of dog">
+                <img src="img/sammy.jpeg" alt="picture of dog" class="img-fluid">
               </a>
             </div>
         </div>
@@ -211,7 +192,7 @@
     <!---->
     <footer class="site-footer">
         <div class="container">
-            <div class="row">
+          <div class="row row-form pt-3 pb-3">
                 <div class="col">
                     <p class="footer-paragraph">Doggo: love for the strays© 2022 | All Rights Reserved</p>
                 </div>

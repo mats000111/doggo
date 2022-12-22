@@ -3,12 +3,9 @@
     max-height: auto;
 }
 
-.header-row {
-    padding: 0 50px;
-}
-
 footer {
     text-align: center;
+    border-bottom: 0px none;
 }
 
 .footer-paragraph {
@@ -17,6 +14,7 @@ footer {
 
 .jumbotron {
     margin-bottom: 0;
+    background-image: radial-gradient(859px at 10% 20%, rgb(245, 220, 154) 0%, rgb(164, 78, 51) 90%);
 }
 
 .index-btn1, .profile-picture {
@@ -31,5 +29,28 @@ footer {
     border-bottom: 1px ridge;
 }
 
-.carousel {
+.carousel-item {
+    max-height: 500px;
+}
+
+.modal-footer {
+    justify-content: center;
+}
+
+.row-form {
+    padding: 0px;
+    border-bottom: 0px none;
+}
+
+.header-row {
+    padding: 0 50px;
+    border-bottom: 0px none;
+}
+
+nav {
+    background-color: #FFFDD0;
+}
+
+body {
+    background-color: rgb(245, 220, 154);
 }
