@@ -47,7 +47,7 @@ footer {
     border-bottom: 0px none;
 }
 
-nav {
+nav, footer {
     background-color: #FFFDD0;
 }
 
